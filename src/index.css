@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-bengali-serif {
+    font-family: 'Noto Serif Bengali', 'Tiro Bangla', serif;
+  }
+  .font-bengali-sans {
+    font-family: 'Hind Siliguri', sans-serif;
+  }
+  .font-cursive {
+    font-family: 'Great Vibes', cursive;
+  }
+  .font-royal {
+    font-family: 'Cinzel', serif;
+  }
+}
+
+/* Gold Foil 3D Embossed Text */
+.gold-emboss-text {
+  color: #ffe680;
+  background: linear-gradient(180deg, #fff5b8 0%, #ffde59 30%, #f5b700 70%, #d48b00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 0px rgba(90, 8, 12, 0.9))
+          drop-shadow(0 4px 6px rgba(0, 0, 0, 0.45))
+          drop-shadow(0 0 16px rgba(255, 215, 0, 0.35));
+}
+
+.gold-wax-text {
+  color: #4a2800;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7), 0 -1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.gold-subtle-text {
+  color: #fff1d6;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6), 0 0 8px rgba(254, 240, 138, 0.4);
+}
+
+/* Envelope Texture with Silk Ribs */
+.envelope-ribs {
+  background-color: #aa1218;
+  background-image:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(0, 0, 0, 0.25) 100%),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.04) 0px,
+      rgba(255, 255, 255, 0.04) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+}
+
+.envelope-flap-bg {
+  background-color: #b5151c;
+  background-image:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0.2) 100%),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.04) 0px,
+      rgba(255, 255, 255, 0.04) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+}
+
+/* Wax Seal Metallic Gradient & Texture */
+.wax-seal-gradient {
+  background: radial-gradient(circle at 35% 30%, #fff6b3 0%, #ffd043 25%, #d9910d 65%, #8f5400 95%);
+  box-shadow:
+    0 8px 24px -2px rgba(0, 0, 0, 0.5),
+    0 3px 6px rgba(0, 0, 0, 0.3),
+    inset 0 2px 4px rgba(255, 255, 255, 0.8),
+    inset 0 -3px 6px rgba(100, 50, 0, 0.6);
+}
+
+/* Soft Antique Paper Texture fallback */
+.parchment-pattern {
+  background-color: #ece0ca;
+  background-image:
+    radial-gradient(ellipse at center, rgba(255, 255, 255, 0.45) 0%, rgba(195, 170, 130, 0.4) 100%),
+    radial-gradient(circle at 20% 40%, rgba(180, 140, 90, 0.12) 0%, transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(170, 130, 80, 0.15) 0%, transparent 45%);
+}
+
+/* Shimmer pulse for seal */
+@keyframes seal-pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(234, 179, 8, 0.4), 0 8px 24px -2px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 0 0 10px rgba(234, 179, 8, 0), 0 12px 28px -2px rgba(0, 0, 0, 0.6);
+  }
+}
+
+.animate-seal {
+  animation: seal-pulse 2.4s infinite cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+/* Custom scrollbar for inner letter */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1e4d0;
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #b48e58;
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #8b6535;
+}
