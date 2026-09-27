@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { ArrowLeft, ChevronRight, X, Heart, Sparkles, ZoomIn } from 'lucide-react';
-
+import coupleImg from "../assets/images/couple_portrait_1790270750048.jpg"
+import bengaliRituals from "../assets/images/bengali_rituals_1790270771686.jpg"
+import frangipaniBouquet from "../assets/images/frangipani_bouquet_1790262826449.jpg"
+import mukutTopor from "../assets/images/mukut_topor_1790270785898.jpg"
 interface GalleryPageProps {
   onBack: () => void;
   onNextPage: () => void;
@@ -12,25 +15,25 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({ onBack, onNextPage }) 
   const photos = [
     {
       id: 'photo1',
-      src: '/src/assets/images/couple_portrait_1790270750048.jpg',
+      src: coupleImg,
       title: 'আমাদের প্রথম শুভদৃষ্টি',
       caption: 'যেখানে দুটি মন এক হয়েছিল...',
     },
     {
       id: 'photo2',
-      src: '/src/assets/images/bengali_rituals_1790270771686.jpg',
+      src: bengaliRituals,
       title: 'উৎসবের রঙিন আলোয়',
       caption: 'প্রতিটি উৎসবে তুমি ছিলে পাশে',
     },
     {
       id: 'photo3',
-      src: '/src/assets/images/frangipani_bouquet_1790262826449.jpg',
+      src: frangipaniBouquet,
       title: 'ফুলের সাজে প্রেম',
       caption: 'শুভক্ষণের মিষ্টি গন্ধ',
     },
     {
       id: 'photo4',
-      src: '/src/assets/images/mukut_topor_1790270785898.jpg',
+      src: mukutTopor,
       title: 'মুকুট ও টোপরের সাজ',
       caption: 'বাঙালি ঐতিহ্যের পবিত্র মেলবন্ধন',
     },
