@@ -29,6 +29,7 @@ import {
   X,
   Heart,
 } from 'lucide-react';
+import wedding from "../assets/images/wedding_parchment_bg_1790262810658.jpg"
 
 interface EnvelopeStageProps {
   data: InvitationData;
@@ -151,7 +152,7 @@ export const EnvelopeStage: React.FC<EnvelopeStageProps> = ({ data, onOpenCustom
       {/* Background: Authentic High-Resolution Parchment Texture */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <img
-          src="/src/assets/images/wedding_parchment_bg_1790262810658.jpg"
+          src={wedding}
           alt="Vintage Parchment Texture"
           className="w-full h-full object-cover object-center opacity-90 brightness-95"
         />

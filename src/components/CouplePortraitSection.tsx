@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface CouplePortraitProps {
   groomNameBn: string;
@@ -22,7 +22,7 @@ export const CouplePortraitSection: React.FC<CouplePortraitProps> = ({
               <span className="w-1.5 h-2 bg-[#166534]" />
               <div
                 className={`w-3.5 h-3.5 rounded-full ${
-                  i % 2 === 0 ? 'bg-[#f59e0b]' : 'bg-[#ea580c]'
+                  i % 2 === 0 ? "bg-[#f59e0b]" : "bg-[#ea580c]"
                 } border border-[#fef08a] shadow-xs flex items-center justify-center text-[8px] text-white`}
               >
                 ❀
@@ -55,10 +55,18 @@ export const CouplePortraitSection: React.FC<CouplePortraitProps> = ({
         </div>
 
         {/* Gold Corner Accents */}
-        <div className="absolute top-2 left-2 text-[#fde047] text-xs pointer-events-none">⚜</div>
-        <div className="absolute top-2 right-2 text-[#fde047] text-xs pointer-events-none">⚜</div>
-        <div className="absolute bottom-2 left-2 text-[#fde047] text-xs pointer-events-none">⚜</div>
-        <div className="absolute bottom-2 right-2 text-[#fde047] text-xs pointer-events-none">⚜</div>
+        <div className="absolute top-2 left-2 text-[#fde047] text-xs pointer-events-none">
+          ⚜
+        </div>
+        <div className="absolute top-2 right-2 text-[#fde047] text-xs pointer-events-none">
+          ⚜
+        </div>
+        <div className="absolute bottom-2 left-2 text-[#fde047] text-xs pointer-events-none">
+          ⚜
+        </div>
+        <div className="absolute bottom-2 right-2 text-[#fde047] text-xs pointer-events-none">
+          ⚜
+        </div>
       </div>
 
       {/* Couple Name & Auspicious Wedding Heading (exact match to video at 00:13) */}

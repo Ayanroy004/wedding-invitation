@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
-
+import React, { useState } from "react";
+import flower from "../assets/images/frangipani_bouquet_1790262826449.jpg";
 // Plumeria (কাঠগোলাপ) Floral Bouquet with Tied Twine Bow
-export const PlumeriaFloral: React.FC<{ className?: string }> = ({ className = '' }) => {
+export const PlumeriaFloral: React.FC<{ className?: string }> = ({
+  className = "",
+}) => {
   const [imageError, setImageError] = useState(false);
 
   return (
@@ -10,20 +12,25 @@ export const PlumeriaFloral: React.FC<{ className?: string }> = ({ className = '
       {!imageError ? (
         <div className="relative w-40 md:w-48 h-40 md:h-48 drop-shadow-[0_8px_16px_rgba(0,0,0,0.4)]">
           <img
-            src="/src/assets/images/frangipani_bouquet_1790262826449.jpg"
+            src={flower}
             alt="কাঠগোলাপ ও জুঁই ফুলের তোড়া (Plumeria Wedding Bouquet)"
             referrerPolicy="no-referrer"
             onError={() => setImageError(true)}
             className="w-full h-full object-contain filter drop-shadow-[0_4px_10px_rgba(0,0,0,0.45)] mix-blend-multiply"
             style={{
-              maskImage: 'radial-gradient(circle at 50% 50%, black 70%, transparent 98%)',
-              WebkitMaskImage: 'radial-gradient(circle at 50% 50%, black 70%, transparent 98%)',
+              maskImage:
+                "radial-gradient(circle at 50% 50%, black 70%, transparent 98%)",
+              WebkitMaskImage:
+                "radial-gradient(circle at 50% 50%, black 70%, transparent 98%)",
             }}
           />
         </div>
       ) : (
         /* High-fidelity vector SVG fallback */
-        <svg viewBox="0 0 160 160" className="w-36 h-36 drop-shadow-[0_8px_16px_rgba(0,0,0,0.4)]">
+        <svg
+          viewBox="0 0 160 160"
+          className="w-36 h-36 drop-shadow-[0_8px_16px_rgba(0,0,0,0.4)]"
+        >
           <defs>
             <linearGradient id="petalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stopColor="#ffffff" />
@@ -92,7 +99,10 @@ export const PlumeriaFloral: React.FC<{ className?: string }> = ({ className = '
 
       {/* Rustic golden tied twine loop extending toward the wax seal */}
       <div className="absolute -bottom-4 -left-6 w-20 h-16 pointer-events-none">
-        <svg viewBox="0 0 100 80" className="w-full h-full drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">
+        <svg
+          viewBox="0 0 100 80"
+          className="w-full h-full drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]"
+        >
           {/* Twin cord loops */}
           <path
             d="M 60 10 C 85 20, 90 50, 65 60 C 40 70, 20 45, 45 25 C 65 10, 80 40, 85 65"
@@ -109,7 +119,15 @@ export const PlumeriaFloral: React.FC<{ className?: string }> = ({ className = '
             strokeLinecap="round"
           />
           {/* Tied knot */}
-          <ellipse cx="55" cy="28" rx="8" ry="6" fill="#c68a18" stroke="#ffe082" strokeWidth="1.5" />
+          <ellipse
+            cx="55"
+            cy="28"
+            rx="8"
+            ry="6"
+            fill="#c68a18"
+            stroke="#ffe082"
+            strokeWidth="1.5"
+          />
         </svg>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { InvitationData } from '../types/invitation';
-
+import coupleImg from "../assets/images/couple_portrait_1790270750048.jpg"
 interface FormalLetterSectionProps {
   data: InvitationData;
   onOpenLetter: () => void;
@@ -28,7 +28,7 @@ export const FormalLetterSection: React.FC<FormalLetterSectionProps> = ({ data, 
         <div className="mt-4 bg-[#fff9ed] rounded-xl p-3 border border-[#f59e0b]/50 shadow-inner flex items-center gap-3 text-left">
           <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-[#b91c1c] shrink-0 bg-[#fde68a]">
             <img
-              src="/src/assets/images/couple_portrait_1790270750048.jpg"
+              src={coupleImg}
               alt="Couple"
               className="w-full h-full object-cover object-top"
             />
